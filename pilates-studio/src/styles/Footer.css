@@ -1,0 +1,43 @@
+/* Footer.css */
+
+/* Footer Container */
+footer {
+    background-color: #282c34; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Footer Links */
+  footer a {
+    color: #61dafb; /* Light blue color */
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect on links */
+  footer a:hover {
+    color: #fff;
+  }
+  
+  /* Social Media Icons (optional) */
+  footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #61dafb;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    color: #fff;
+  }
+  

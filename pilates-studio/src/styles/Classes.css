@@ -1,0 +1,21 @@
+/* Classes.css */
+
+/* Container for the classes page */
+.classes-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .classes-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .classes-container .class-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  

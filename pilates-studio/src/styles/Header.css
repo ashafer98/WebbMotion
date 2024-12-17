@@ -1,0 +1,23 @@
+/* Header.css */
+
+/* Container for the header */
+header {
+    background-color: #282c34;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navigation links */
+  header nav a {
+    color: #61dafb;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    font-size: 1.2rem;
+  }
+  
+  header nav a:hover {
+    color: #fff;
+  }
+  

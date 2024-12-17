@@ -1,0 +1,22 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3; /* Light gray background */
+  color: #333333; /* Dark text for readability */
+}
+
+a {
+  color: #f4a300; /* Primary color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333333; /* Darken link color on hover */
+}
+
+footer {
+  background-color: #333333; /* Dark footer background */
+  color: #ffffff; /* White text for footer */
+  padding: 20px 0;
+  text-align: center;
+}
