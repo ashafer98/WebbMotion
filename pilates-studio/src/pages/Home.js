@@ -10,7 +10,7 @@ function Home() {
       <HeroSection />
       <OnlineClasses />
       <div className="cta-section">
-        <h2>Ready to take your Pilates journey to the next level?</h2>
+        <h2>Weaving Strength into Motion.</h2>
         <p>Join us for transformative Pilates classes designed for all levels. Book your class now and start your journey!</p>
         <a href="/contact" className="cta-button">Book a Class</a>
       </div>
