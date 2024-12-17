@@ -1,0 +1,73 @@
+/* ClassCard.css */
+.class-card {
+    background-color: #f9f9f9;
+    border: 2px solid #ff7f50; /* Webb Motion accent color */
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .class-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .class-card-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Playfair Display', serif; /* Heading font */
+    margin-bottom: 8px;
+  }
+  
+  .class-card-description {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Roboto', sans-serif; /* Body font */
+    margin-bottom: 12px;
+  }
+  
+  .class-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .class-card-price {
+    font-size: 1.2rem;
+    color: #ff7f50; /* Accent color for price */
+    font-weight: bold;
+  }
+  
+  .class-card-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .class-card-buy-button,
+  .class-card-learn-more-button {
+    background-color: #ff7f50;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .class-card-buy-button:hover,
+  .class-card-learn-more-button:hover {
+    background-color: #ff6347; /* Slightly darker shade for hover effect */
+  }
+  
+  .class-card-learn-more-button {
+    background-color: #5bc0de; /* Learn More button in a different color */
+  }
+  
+  .class-card-learn-more-button:hover {
+    background-color: #31a8b9;
+  }
+  
