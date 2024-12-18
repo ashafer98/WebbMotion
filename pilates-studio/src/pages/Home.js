@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../styles/Home.css';
 import ClassCard from '../components/ClassCard';
 import HeroSection from '../components/HeroSection'; // Import HeroSection Component
@@ -8,18 +9,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Import class data from Classes.js
+import { classData } from './Classes';  // Import class data from Classes.js
+
 const Home = () => {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
-
-  const classes = [
-    { title: 'Mat Pilates for Beginners', description: 'Build your foundation in Pilates.', price: '$49', image: '/assets/class1.jpg' },
-    { title: 'Core Strength 30 Days', description: 'Strengthen and tone your core.', price: '$79', image: '/assets/class2.jpg' },
-    { title: 'Full Body Sculpt', description: 'Sculpt your entire body with focused exercises.', price: '$89', image: '/assets/class3.jpg' },
-    { title: 'Pilates for Flexibility', description: 'Enhance flexibility with targeted movements.', price: '$59', image: '/assets/class4.jpg' },
-    { title: 'Power Pilates', description: 'A dynamic program for advanced Pilates lovers.', price: '$99', image: '/assets/class5.jpg' },
-    { title: 'Pilates for Posture', description: 'Improve posture and alignment.', price: '$69', image: '/assets/class6.jpg' },
-  ];
 
   const settings = {
     dots: true,
@@ -52,14 +47,16 @@ const Home = () => {
       <div className="class-carousel">
         <h2>Explore Our Classes</h2>
         <Slider {...settings}>
-          {classes.map((classItem, index) => (
-            <ClassCard
-              key={index}
-              title={classItem.title}
-              description={classItem.description}
-              price={classItem.price}
-              image={classItem.image}
-            />
+          {classData.map((classItem, index) => (
+            <div key={index}>
+              <Link to={`/class/${classItem.id}`}>
+                <ClassCard
+                  title={classItem.title}
+                  description={classItem.description}
+                  image={classItem.image}
+                />
+              </Link>
+            </div>
           ))}
         </Slider>
       </div>

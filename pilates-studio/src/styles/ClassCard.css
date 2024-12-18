@@ -1,6 +1,7 @@
+/* Class card styles */
 .class-card {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #220e19; /* Dark background using the first color */
+    border: 1px solid #571b34; /* Deep maroon border for a luxurious touch */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 1rem;
@@ -16,22 +17,26 @@
   
   .class-details {
     padding: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Sans-serif for better readability */
   }
   
   .class-details h3 {
+    font-family: 'Merriweather', serif; /* Serif for titles for a more elegant and sophisticated look */
     font-size: 1.5rem;
     margin: 0.5rem 0;
+    color: #bd9128; /* Warm gold for headings */
   }
   
   .class-details p {
     font-size: 1rem;
-    color: #555;
+    color: #e3c57d; /* Light gold text for readability */
+    line-height: 1.6;
   }
   
   .price {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #028090;
+    color: #e3c57d; /* Light gold for pricing */
   }
   
   .card-buttons {
@@ -40,7 +45,7 @@
   
   .buy-button,
   .learn-button {
-    background-color: #028090;
+    background-color: #984d64; /* Muted purple for buttons */
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -48,15 +53,15 @@
     cursor: pointer;
     margin: 0.25rem;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; /* Sans-serif for buttons */
     transition: background-color 0.3s;
   }
   
   .learn-button {
-    background-color: #02c39a;
+    background-color: #bd9128; /* Warm gold for the learn button */
   }
   
   .buy-button:hover,
   .learn-button:hover {
-    background-color: #02656b;
+    background-color: #02656b; /* Muted green for hover effect */
   }
-  

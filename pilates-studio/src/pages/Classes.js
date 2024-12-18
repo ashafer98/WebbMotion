@@ -1,8 +1,10 @@
+// Classes.js
+
 import React from 'react';
 import '../styles/Classes.css'; // Link to your classes styles
 import ClassCard from '../components/ClassCard';
 
-const classData = [
+export const classData = [
   {
     id: 1,
     title: 'Posture Perfect: Pilates for Desk Workers',

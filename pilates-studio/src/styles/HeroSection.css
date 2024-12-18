@@ -17,11 +17,13 @@
   .hero-content h1 {
     font-size: 3rem;
     margin: 0;
+    color: #220e19;
   }
   
   .hero-content p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
+    color: #220e19;
   }
   
   /* CTA Section - Beneath the Hero Paragraph */
@@ -65,7 +67,7 @@
     padding: 0.8rem 1.2rem;
     font-size: 1rem;
     color: white;
-    background-color: #FF6F61; /* Button color matches theme */
+    background-color: #984d64; /* Button color matches theme */
     border: none;
     border-radius: 5px;
     cursor: pointer;
