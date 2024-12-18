@@ -1,24 +1,21 @@
 import React from 'react';
-import '../styles/ClassCard.css'; // Ensure path is correct
+import '../styles/ClassCard.css';
 
-function ClassCard({ title, description, price, onBuy, onLearnMore }) {
+const ClassCard = ({ title, description, price, image }) => {
   return (
     <div className="class-card">
-      <h3 className="class-card-title">{title}</h3>
-      <p className="class-card-description">{description}</p>
-      <div className="class-card-footer">
-        <span className="class-card-price">${price}</span>
-        <div className="class-card-buttons">
-          <button className="class-card-buy-button" onClick={onBuy}>
-            Buy Now
-          </button>
-          <button className="class-card-learn-more-button" onClick={onLearnMore}>
-            Learn More
-          </button>
+      <img src={image} alt={title} className="class-image" />
+      <div className="class-details">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <span className="price">{price}</span>
+        <div className="card-buttons">
+          <button className="buy-button">Buy Now</button>
+          <button className="learn-button">Learn More</button>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ClassCard;

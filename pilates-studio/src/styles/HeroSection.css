@@ -1,36 +1,83 @@
+/* Hero Section */
 .hero-section {
-    position: relative;
-    height: 100vh;
+    background: url('C:\Users\anyas\Webb Motion\WebbMotion\pilates-studio\public\assets\Pilates-Cover.jpg') center/cover no-repeat;
+    color: white;
+    height: 900px;
+    width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
   }
   
   .hero-content {
-    z-index: 1;
+    text-align: center;
   }
   
   .hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin: 0;
   }
   
   .hero-content p {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
   }
   
-  .hero-button {
-    background-color: #ff9900;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 20px;
+  /* CTA Section - Beneath the Hero Paragraph */
+  .cta-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f8f8; /* Light background for contrast */
+    margin-top: 2rem; /* Ensures it’s under the paragraph */
+    border-radius: 8px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .signup-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    width: 300px;
+    max-width: 90%;
   }
   
-  .hero-button:hover {
-    background-color: #e68a00;
+  .signup-form button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #FF6F61; /* Button color matches theme */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
+  
+  .signup-form button:hover {
+    background-color: #ff3b2d;
+  }
+  
+  .thank-you {
+    font-size: 1.2rem;
+    color: #28a745;
+  }
+  
   
