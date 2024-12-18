@@ -1,0 +1,10 @@
+git add commit push
+
+build by running
+
+npm run build
+
+MAke sure your in this directory
+~/pilates-studio/build
+
+aws s3 sync . s3://webbmotion.com --delete --exclude "metadata/*"
